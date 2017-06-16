@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+  <title>cherry jackpot game</title>
+ <link href="try.css" type="text/css" rel="stylesheet" >
+   
+
+    </head>
+<body>
+    <p>score</p>
+    <div class="d">
+        <p id="e"></p>
+    </div>
+
+<button onclick="myFunction()">spin</button>
+    <div class="container">
+      
+   <div class="column column1">
+    <p id="demo">1</p></div>
+<div class="column column2">
+    <p id="dem">5</p></div>
+<div class="column column3">
+    <p id="de">3</p></div>
+    </div>
+
+<script>
+    var total=0,score,count2=0;
+function myFunction() {
+     var one = Math.floor((Math.random()*9)+1);
+     var two = Math.floor((Math.random()*9)+1);
+     var three = Math.floor((Math.random()*9)+1);
+
+    document.getElementById("demo").innerHTML = one;
+    document.getElementById("dem").innerHTML = two;
+    document.getElementById("de").innerHTML = three;
+
+     if ( one == two && two == three && three == one  ) {
+         var count1=0;
+         count1=2;
+         total+=count1;
+         myFuncscr(total);
+                    
+                } 
+    if( one == two || two == three || three == one   )
+        {
+          
+         count2=1;
+         total=total+count2;
+        myFuncscr(total);
+          // document.getElementById("e").innerHTML=total;     
+        }
+}
+function myFuncscr(score)
+    {
+     document.getElementById("e").innerHTML=score;   
+    }
+    
+
+</script>
+
+</body>
+</html>
