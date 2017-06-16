@@ -1,0 +1,40 @@
+.container {
+    margin: 100px;
+    position: relative;
+    width: 300px;
+}
+.container div {
+    height: 100px;
+}
+.d{
+     margin: 00px;
+    position: relative;
+    width: 100px;
+    border: 1px solid black;
+    font-size: 30px;
+    color: #000FFF;
+}
+.d div {
+    height: 100px;
+}
+.column1 {
+    width: 33%;
+    left:0;
+    background: #FFFFFF;
+    position: absolute;
+     border: 1px solid black;
+}
+.column2 {
+    width: 33%;
+    background: #FFFFFF;
+    margin-left:33%;
+    position: absolute;
+     border: 1px solid black;
+}
+.column3 {
+    width: 33%;
+    right: 0;
+    position: absolute;
+    background: #FFFFFF;
+     border: 1px solid black;
+}
